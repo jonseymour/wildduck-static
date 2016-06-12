@@ -1,0 +1,177 @@
+<html>
+<head>
+<title>displaced trust</title>
+<link rel="stylesheet" href="../theme/wildduck.css"/>
+</head>
+<body>
+<h1>displaced trust</h1>
+<p style="text-align: right"><i>displaced trust - implictly transferring trust in one thing over here to another thing over there.</i></p>
+<p>
+<i>In the text that follows {Blah} represents one of many corporations, www.{blah}.com for their websites. {CDN} represents a popular content distribution network that many {Blah}'s use to offload their static content. The purpose of this article is not to blame {Blah} or {CDN} for their exposure to the HeartBleed vulnerabilty. I have chosen not to identify particular {Blah}'s because to do so could on occasion be awkward for me or organisations I have associations with. I do, however, wish to draw attention to a misplaced sense of confidence that some {Blah}'s have about the integrity of their own SSL infrastructure in the hope that people who have the power to detect and fix such problems in their own organisations can do so before others who do not place such a high value on {Blah}'s reputation draw attention to the issue.</i>
+</p>
+<p>
+The responses from {Blah} are, unfortunately, all too real.
+</p>
+<hr/>
+<h2>The problem</h2>
+<p>
+The assurance typically reads like this:
+<p>
+<pre>
+{Blah} would like to assure our customers that www.{blah}.com is not and was not exposed to the HeartBleed bug because we do not and have never used OpenSSL.
+</pre>
+</p>
+<p>
+These assurances would be fine. Except for one very small, but important, detail. Many sites do, in fact, use OpenSSL courtesy of the content distribution network {CDN} they use to offload static content.
+</p>
+<p>
+<hr/>
+<h2>The gentle cough (April 21)</h2>
+<div class="missive">
+G'day,
+<p>
+According to this report: 
+</p><p>
+<a href="http://toolbar.netcraft.com/site_report?url=https%3A%2F%2Fwww.{blah}.com%2F">http://toolbar.netcraft.com/site_report?url=https%3A%2F%2Fwww.{blah}.com%2F</a>
+</p><p>
+https://www.{blah}.com 
+</p><p>
+is still potentially exposed to some consequences of the HeartBleed issue. 
+</p><p>
+This exposure arises from the fact that some of the content on www.{blah}.com is served by {CDN}, {CDN} was exposed to the HeartBleed issue and the certificates presented by {CDN} on behalf of www.{blah}.com apparently have not been revoked and reissued since the advent of the HeartBleed issue. 
+</p>
+<p>If you would like me to explain the nature of the issue in more detail, please feel free to contact me on +61-555-555-555</p>
+<p>Yours sincerely,</p>
+<p>{your reporter}</p>
+</div>
+<hr/>
+<h2>The dismissive response (April 22)</h2>
+
+<div class="missive">
+<p>
+Dear {reporter}:
+</p><p>
+Thank you for taking the time to write us about your concerns for the {Blah} web site. I am happy to provide some insight to this matter.
+</p><p> 
+In light of the events around the HeartBleed OpenSSL issue, our teams have notified us that {Blah}'s customer sites and services do not rely on the versions of the SSL technologies associated with this security issue and remain safe to use. Privacy, security, and service in {Blah}'s online operations are just as critical as in the rest of our business. We use firewall barriers, encryption techniques and authentication procedures, among others, to maintain the security of your online session and to protect {Blah} accounts and systems from unauthorized access.
+</p><p>
+Our sites offer strong protection. For security reasons, many of our protections are purposely not visible or detectable externally. We strongly dispute any suggestion to the contrary. We are aware of certain external analysis that purports to assess our site security related to SSL. It is inaccurate in its assessment.
+</p><p>
+Our teams did mention that a sensible precaution you can take in regard to this matter is to ensure that you don't use the same password at {Blah} that you use at other sites. This is a good general practice and can be found along with other HeartBleed OpenSSL information at:
+</p><p>
+https://www.{blah}.com/security/blah-de-blah-de-blah
+</p><p>
+If you have any other questions or concerns, please do not hesitate to let us know. You may also contact the Service group for further discussions of the HeartBleed virus. Associates can be reached at 800-YAR-BLAH, 24 hours a day, 7 days a week.
+</p><p>
+Thank you for allowing {Blah} to service your investment needs, {reporter}! Have a good week.
+</p><p> 
+Sincerely,
+</p><p>
+
+{Blah}
+</p>
+</div>
+<hr/>
+<h2>The polite riposte (April 22)</h2>
+</p>
+<div class="missive">
+<p>
+G'day,
+<p>
+I have no doubt that {Blah} manages its own infrastructure to the highest standards expected of an {abstract widgets} institution. My concerns specifically relate to third party infastructure {CDN} that {Blah} relies on in part to deliver services via www.{blah}.com.
+</p>
+<p>
+I also note that {CDN} is still presenting a certificate for http://www.{blah}.com that was issued while at least part of the {CDN} infrastructure was vulnerable to the consequences of the 
+HeartBleed bug.
+</p>
+<p>
+Given {Blah}'s assertions that it is not and was not vulnerable to the consequences of the HeartBleed bug, despite the fact that a service provider that {Blah} relies on was, at least in part, vulnerable to the bug, then one of the following must be true:
+</p>
+<p>
+a) the certificate currently presented by {CDN} is different to the ones that have been presented since the advent of HeartBleed, or, <br/>
+b) the {CDN} infrastructure used to support {Blah} is specifically known to have been invulnerable to compromise by the HeartBleed bug at all times in the past, or,<br/>
+c) {Blah} is mistaken in its beliefs abouts its vulnerability to the HeartBleed bug</br>
+</p>
+<p>
+No doubt {Blah} believes either a) or b) is true. However, without further evidence (as distinct from assertions), to the contrary it is not clear why others should not believe c). Simply asserting that c) is not true without offering concrete evidence to show that either a) or b) is true is not particularly convincing. 
+</p>
+<p>
+Just to make this very clear, I am specifically NOT asserting that c) is true. I am asserting that without strong evidence to the contrary either one of a), b) or c) must be true and that c) could be true, {Blah}'s assertions to the contrary notwithstanding.
+</p>
+<p>
+Of course, all such speculation would be rendered moot if {Blah} simply chose to revoke the old certificate currently presented by https://www.{blah}.com and issued a new one that post-dates the more widespread issues that {CDN} has publicly acknowledged. 
+</p>
+<p>
+In my view, revoking and re-issuing the certificates that were possibly (if not actually) exposed to the HeartBleed bug would be the most responsible and transparent thing for an organisation that banks on others trust to do.
+</p>
+<p>
+Sincerely,
+</p>
+<p>
+{your reporter}
+</p>
+<hr/>
+<h2>For want of a clue (April 23)</h2>
+<p>
+Dear {reporter},
+</p><p>
+Thank you for your prompt reply! I am glad to further address your concern with {CDN} and {Blah}.
+</p><p>
+You are correct that we use {CDN}, but we only use this group for non-secured things. We do not use them for secured information that is used to access accounts or personal information. 
+We use {CDN} for things like the {Blah} home page, where general information is loaded. Their services are not used for login purposes, just to provide general non-secured information.
+</p><p>
+Again, {Blah} was not affected by the Heartbleed OpenSSL virus. Our Web site is safe and remain secured. {Blah} does not use the OpenSSL certificates that were affected and 
+your accounts remain protected. For security reasons, many of our protections are purposely not visible or detectable externally.
+</p><p>
+If there is anything else I can help you with or answer any other questions for you, please send me another message any time.
+</p><p>
+Thank you for your time, {reporter}! Have a great day.
+</p>
+</div>
+<hr/>
+<h2>With a cherry on top (April 23)</h2>
+<p>
+Dear {Blah},
+</p><p>
+Thank you for latest reply.
+</p><p>
+The fact is that {Blah} uses {CDN} served content on https://www.{blah}.com to present a link to the login screen. While it is true that the login screen itself is hosted under a different domain (login.{blah}.com) and is not itself vulnerable to the issue I am concerned about, the home page itself is.
+</p><p>
+A malicious attacker who may have exploited the HeartBleed bug during the period that {CDN} was vulnerable could have acquired the private key for the certificate that secures https://www.{blah}.com. [1]
+</p><p>
+Such an attacker could then use the private key of that certificate to mount a man-in-the-middle attack against clients of {Blah} who use networks that the attacker controls [2].
+</p><p>
+One such attack that could be mounted is to make a copy of the existing {Blah} home page so that the login link refers to a link such as https://www.{blah}.com/login that the attacker controls. Having done this, the attacker could then present a login prompt that could be used to collect your customer's login credentials - the classic phishing attack [3]
+</p><p>
+I hope I have raised some doubts in your mind about the risk that HeartBleed continues to pose to {Blah}.
+</p><p>
+If, on the other hand, you continue to think I am mistaken about the seriousness of this issue, I encourage you to circulate my chain of emails with your engineering staff so that you can all enjoy a good laugh at my earnest, if so far fruitless, attempts to help.
+</p><p>
+Sincerely,
+
+{your reporter}
+</p><p>
+
+[1] <a href="http://blog.cloudflare.com/the-results-of-the-cloudflare-challenge">http://blog.cloudflare.com/the-results-of-the-cloudflare-challenge</a><br/>
+[2] <a href="http://en.wikipedia.org/wiki/Man-in-the-middle_attack">http://en.wikipedia.org/wiki/Man-in-the-middle_attack</a><br/>
+[3] <a href="http://en.wikipedia.org/wiki/Phishing">http://en.wikipedia.org/wiki/Phishing</a>
+<hr/>
+<h2>A Postscript (April 23)</h2>
+<p>
+In light of new information that is available in <a href="http://netcraft.com/">netcraft.com</a> site reports, 
+it is likely that https://www.{blah}.com/ has been displaying a non-compromised certificate since Tuesday, April 22. 
+I drew the wrong conclusion that the certificate currently presented was probably vulnerable because the issue date of the certificate pre-dated the resolution of {CDN}'s vulnerablity by several months. However, in forming that conclusion, I neglected to consider one of two possibilities: a) that the certificate had been re-issued with the original issue date or b) that a second certificate which was issued in the past, but never presented, was used to replace the vulnerable certificate.
+</p>
+<p>
+However, even this error of reasoning on my part is illustrative: by using a certificate with an issue date that pre-dated the rectification of the issue, {Blah} missed the opportunity to use 
+the existence of a new certificate as proof that they had addressed, rather than ignored, the issue. The reason is simple: a back dated, or previously issued certificate may have been presented while the infrastructure was compromised and there is no way to be sure, by inspecting the certificate itself, that that this did not occur. On the other hand, and provided CA's never issue forward dated certificates, then the CA's signature on the certificate should be self-evident proof that the certificate did not exist prior to the rectification of the issue and hence cannot have been compromised.
+</p>
+<p>
+For most websites, HeartBleed is now primarily a reputational rather than technical issue. This is true because, in reality, most certificates were probably not compromised during the period of vulnerability. It is possible that many were but there is no way to know how large the problem of technical compromise was or is. The thing to do now is to restore confidence in the infrastructure as it is now, by fixing any outstanding technical issues and by doing as much as possible to avoid the ongoing risk of reputational compromise. This means being transparent about what your actual vulnerabilities were and what steps you have taken to address them. Denying a vulnerability that you did have or presenting certificates with misleading issue dates will, ultimately, not help your cause.
+</p>
+<p>Finally, note that while {Blah} is less vulnerable than it was (its old certifcate has been replaced but not yet revoked), there are other {Blah}s out there that are still presenting old certificates via {CDN}s previously compromised infrastructure. The certificates, and reputations of the organisations they purport to represent, remain vulnerable to compromise until those certificates are revoked and replaced.
+<div>
+<a href="../about.html">about</a> | <a href="../products.html">products</a> | <a href="../services.html">services</a> | <a href="#">on heartbleed</a>
+</div>
+</body>
+</html>
