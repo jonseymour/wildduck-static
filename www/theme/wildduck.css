@@ -21,6 +21,10 @@ p#byline {
    margin: 0;
 }
 
+p {
+   text-align: right;
+}
+
 div#contact, div#contact ul {
    text-align:right;
    list-style-type: none;
