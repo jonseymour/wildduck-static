@@ -21,7 +21,7 @@ p#byline {
    margin: 0;
 }
 
-p {
+div#body p {
    text-align: right;
 }
 
