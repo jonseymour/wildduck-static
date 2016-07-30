@@ -1,12 +1,13 @@
 
 body {
 	font-family: arial;
+   margin-right: 50;
 }
 
 div#banner,h1.banner {
    font-size: 3em;
    text-align: right;
-   margin-top: 200px;
+   margin-top: 0px;
    margin-bottom: 0;
 }
 
@@ -19,6 +20,14 @@ p#byline {
    font-size: 1em;
    text-align: right;
    margin: 0;
+}
+
+div#logo {
+   text-align: right;
+}
+
+div#logo img {
+   height: 400;
 }
 
 div#body p {
